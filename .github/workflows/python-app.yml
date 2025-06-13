@@ -26,5 +26,6 @@ jobs:
         echo "Job finished at $(date)"
 
     - name: Run tests
-      run: pytest
+      run: |
+           pytest
            echo "Job finished at $(date)"
