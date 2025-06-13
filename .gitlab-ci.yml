@@ -1,0 +1,6 @@
+variables:
+  DOCKER_REGISTRY_USER: $CI_REGISTRY_USER
+
+login:
+  script:
+    - echo "$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USER" --password-stdin
